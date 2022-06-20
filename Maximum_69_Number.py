@@ -1,16 +1,17 @@
-n=int(input())
+a=int(input())
+c=0
 d=0
-r=0
-k=0
-while(n!=0):
-    s=n%10
-    d=d*10+s
-    n=n//10
-while(d!=0):
-    f=d%10
-    if(f==6 and k==0):
-        f=9
-        k+=1
-    r=r*10+f
-    d=d//10
-print(r)
+m=0
+while a!=0:
+    b=a%10
+    a=a//10
+    m=m*10+b
+while m!=0:
+    e=m%10
+    m=m//10
+    if d==0:
+        if e==6:
+            e=9
+            d+=1
+    c=c*10+e
+print(c)
