@@ -1,9 +1,12 @@
 def prime(a):
-    for i in range(2,int(a**0.5)+1):
+    c=0
+    for i in range(1,a+1):
         if a%i==0:
-            return 0
-    else:
+            c+=1
+    if c==2:
         return 1
+    else:
+        return 0
 a=int(input())
 b=int(input())
 c=a+b
