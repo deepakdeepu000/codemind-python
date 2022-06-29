@@ -8,8 +8,9 @@ def prime(a):
     else:
         return 1
 a=int(input())
-count=0
-for j in range(1,a+1):
-    if a%j==0:
-        count+=prime(j)
-print(count)
+c=0
+for i in range(1,a+1):
+    if a%i==0:
+        if prime(i):
+            c+=1
+print(c)
