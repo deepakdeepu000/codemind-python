@@ -1,18 +1,15 @@
 n = int(input())
-l = len(str(n))
-
-a = n
-b = 0
-r = 0
-
-while a > 0:
-    r= a % 10
-    b = b + int(r**l)
-    a = a // 10
-    l = l - 1
+a = len(str(n))
+b=n
+k=0
+while b > 0:
+    c = b % 10
+    k = k + int(c**a)
+    b = b // 10
+    a = a - 1
 
 
-if b == n:
+if k == n:
     print("True")
 else:
     print("False")
