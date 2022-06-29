@@ -1,5 +1,4 @@
 a=int(input())
-b=[a]
 b=list(map(int,input().split()))
 c=0
 l=0
