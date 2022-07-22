@@ -1,7 +1,7 @@
-a,b=map(int,input().split())
-c=list(map(int,input().split()))
-s=0
-for i in c:
-    if i%b==0:
-        s+=1
-print(s)
+n,m=map(int,input().split())
+a=list(map(int,input().split()))
+c=0
+for i in a:
+    if i%m==0:
+        c+=1
+print(c)
