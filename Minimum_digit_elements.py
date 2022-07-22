@@ -1,19 +1,15 @@
-def rev(a):
+def dig(n):
+    if n==0:
+        return 1
     c=0
-    while a:
-        b=a%10
-        a=a//10
+    while(n!=0):
+        n=n//10
         c+=1
     return c
-a=int(input())
-b=list(map(int,input().split()))
-c=[]
-count=0
-for i in b:
-    d=rev(i)
-    c.append(d)
-m=min(c)
-for i in b:
-    if rev(i)==m:
-        count+=1
-print(count)
+n=int(input())
+l=[]
+a=list(map(int,input().split()))
+for i in range(n):
+    l.append(dig(a[i]))
+x=min(l)
+print(l.count(x))
