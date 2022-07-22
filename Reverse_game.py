@@ -1,15 +1,14 @@
-def rev(n):
-    b=0
+def pal(n):
+    k=n
+    c=0
     while n!=0:
-        a=n%10
+        b=n%10
         n=n//10
-        b=b*10+a
-    return b
+        c=c*10+b
+    return c
 n=int(input())
 a=list(map(int,input().split()))
-for i in  a:
-    print(rev(i),end=" ")
-
-    
-        
-        
+s=[]
+for i in a:
+    s.append(pal(i))
+print(*s)
