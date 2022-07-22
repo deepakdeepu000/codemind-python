@@ -9,6 +9,8 @@ def dig(n):
         c+=1
     return c
 n=int(input())
-x=list(map(int,input().split()))
-for i in x:
-    print(dig(i),end=" ")
+a=list(map(int,input().split()))
+s=[]
+for i in a:
+    s.append(dig(i))
+print(*s)
