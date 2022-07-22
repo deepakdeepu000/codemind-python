@@ -1,18 +1,13 @@
 def rev(n):
-    b=0
+    c=0
     while n!=0:
-        a=n%10
+        b=n%10
         n=n//10
-        b=b+a
-    return b
+        c+=b
+    return c
 n=int(input())
 a=list(map(int,input().split()))
-b=[]
-
-for i in  a:
-    b.append(rev(i))
-print(sum(b))
-
-    
-        
-        
+s=[]
+for i in a:
+    s.append(rev(i))
+print(sum(s))
