@@ -1,6 +1,7 @@
 def rev(n):
     a=n[::-1]
     return a
+
 n=input()
 n=n.split()
 for i in range(len(n)):
