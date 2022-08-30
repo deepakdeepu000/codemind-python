@@ -1,11 +1,12 @@
-a=input()
-b=a.split()
-d=[]
+n=input()
+a=n.lower()
+k=a.split()
 c=0
-for i in b:
-    for j in i:
-        if j in 'aeiouAEIOU':
-            c+=1
-    d.append(c)
+s=[]
+for i in k:
     c=0
-print(min(d))
+    for j in i:
+        if j in 'aeiou':
+            c+=1
+    s.append(c)
+print(min(s))
