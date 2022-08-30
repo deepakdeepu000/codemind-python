@@ -1,6 +1,6 @@
 a=input()
 b=input()
-for i in range(0,len(a)):
+for i in range(len(a)):
     if a[i]==b:
         print(True)
         print(i)
