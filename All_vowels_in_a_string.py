@@ -1,5 +1,4 @@
 a=input()
-l=a
 b=''
 for i in a:
     b+=i
