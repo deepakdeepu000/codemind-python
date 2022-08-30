@@ -1,6 +1,6 @@
-a=input()
+n=input()
 s=[]
-b=a.split()
-for i in b:
+a=n.split()
+for i in a:
     s.append(len(i))
 print(*s)
