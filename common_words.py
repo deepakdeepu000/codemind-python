@@ -1,16 +1,6 @@
-n=input()
-k=input()
-n=n.lower()
-k=k.lower()
-a=n.split()
-b=k.split()
-s=[]
-if len(a)>len(b):
-    for i in a:
-        if i in b and i  not in s:
-            s.append(i)
-else:
-    for i in b:
-        if i in a and i not in s:
-            s.append(i)
-print(*s)
+n=input().lower()
+k=input().lower()
+for i in k.split():
+    for j in n.split():
+        if i==j:
+            print(i,end=" ")
